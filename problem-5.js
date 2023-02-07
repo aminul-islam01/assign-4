@@ -12,6 +12,8 @@
 এখন তোমার task: সব বন্ধুর gems মিলিয়ে total কতটি diamond পাবে সেটা বের করতে হবে। total diamond এর সংখ্যা যদি 1000 এর দিগুন এর উপর হয়ে যায় সেক্ষেত্রে total diamond থেকে 2000 বাদ দিয়ে যতগুলো diamond অবশিষ্ট থাকবে, ততগুলো তোমরা পাবে।
 */ 
 
+// problem-5. input 3 peramiter gems there convert to diamond and then addition total diamond. now total diamond greater than or equal to 1000 double. then substraction 2000 from total diamond and output rest diamond
+
 function gemsToDiamond(gems1, gems2, gems3) {
     if(gems1 == undefined || gems2 == undefined || gems3 == undefined){
         return "please input number and try again"
@@ -21,7 +23,7 @@ function gemsToDiamond(gems1, gems2, gems3) {
     const friends3Diamond = 43 * gems3;
 
     let totalDiamond = friends1Diamond + friends2Diamond + friends3Diamond;
-    if(totalDiamond > 2000){
+    if(totalDiamond >= 2000){
         totalDiamond = totalDiamond - 2000;
     }
     return totalDiamond;

@@ -4,6 +4,9 @@
 এখন তোমার task : তোমাকে সেই নাম্বার এর সাথে 3 গুন করে, তারপর 10 যোগ করে, তারপর 2 দিয়ে ভাগ করে, তারপর 5 বিয়োগ করে, যা আউটপুট আসবে তা return করতে হবে। 
 */ 
 
+
+// problem-1. input a number and simple calculate addition, substraction, qual and divided it.
+
 function mindGame(number) {
     if(typeof(number) == 'string' || number < 0){
         return "please input a valid number"
