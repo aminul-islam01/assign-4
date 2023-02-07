@@ -7,7 +7,7 @@
 
 function findingBadData(arr) {
     let badData = 0;
-    if(typeof(arr) !== "object"){
+    if(Array.isArray(arr) == false){
         return "please input an array"
     }
     else for(let i = 0; i < arr.length; i++){
