@@ -6,7 +6,6 @@
 // problem-4. input an array some number. The number is negative number (less than zero) it is bad data. then count this number how much is and output total number of bad data.
 
 function findingBadData(arr) {
-    console.log(typeof(arr));
     let badData = 0;
     if(typeof(arr) !== "object"){
         return "please input an array"
